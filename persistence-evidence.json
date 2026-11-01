@@ -1,0 +1,13 @@
+{
+  "display": 120,
+  "port": 14500,
+  "pids": {
+    "xvfb": 1437,
+    "xfce": 1458,
+    "xpra": 2017
+  },
+  "pids_alive": true,
+  "port_accepting": true,
+  "artifact_persisted_after_gui_exit": true,
+  "artifact_sha256": "4f3017107b0a9c9b89732fa2c1737ef6cd440352cd19e53e2a5df2f58cc8b503"
+}

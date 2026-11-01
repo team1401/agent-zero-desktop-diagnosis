@@ -1,0 +1,309 @@
+{
+  "time_utc": "2026-10-22T16:19:06Z",
+  "containers_before": [
+    {
+      "name": "/agent-zero-1",
+      "id": "26e79c6970c001fa57953945d08339b639c08579b04b4a7aa42c46f2f254eece",
+      "started": "2026-10-21T21:49:26.394894494Z"
+    },
+    {
+      "name": "/agent-zero-2",
+      "id": "973e9149c0b2d1fab8b956ff27c02262d31652dc86e7e2c5b23790987dd0a07b",
+      "started": "2026-10-21T21:49:26.632852961Z"
+    }
+  ],
+  "runtime_before": {
+    "display": 120,
+    "xpra_port": 14500,
+    "pids": {
+      "xvfb": 584,
+      "xfce": 606,
+      "xpra": 1166
+    },
+    "width": 1440,
+    "height": 900,
+    "started_at": 1792598197.0038347,
+    "timezone": "UTC",
+    "profile_dir": "/a0/usr/plugins/_desktop/profiles/agent-zero-desktop",
+    "manifest_mtime": 1792598200.2430987,
+    "pid_status": {
+      "xvfb": false,
+      "xfce": false,
+      "xpra": false
+    },
+    "pid_commands": {},
+    "port_accepting": false,
+    "display_valid": false
+  },
+  "contexts_before": [
+    {
+      "id": "OzIMaV93",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-22T15:55:20.827623+00:00"
+    },
+    {
+      "id": "30dgUMoC",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T17:18:58.238222+00:00"
+    },
+    {
+      "id": "cC08syVL",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T17:15:57.003735+00:00"
+    },
+    {
+      "id": "1wJgHpim",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T17:13:36.229254+00:00"
+    },
+    {
+      "id": "QjEFT9FW",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T17:03:09.529303+00:00"
+    },
+    {
+      "id": "PYc4jWNp",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T15:38:36.333289+00:00"
+    }
+  ],
+  "activation": {
+    "ok": true,
+    "session_id": "agent-zero-desktop",
+    "error": null
+  },
+  "runtime_after": {
+    "display": 120,
+    "xpra_port": 14500,
+    "pids": {
+      "xvfb": 1437,
+      "xfce": 1458,
+      "xpra": 2017
+    },
+    "width": 1440,
+    "height": 900,
+    "started_at": 1792685959.6938872,
+    "timezone": "UTC",
+    "profile_dir": "/a0/usr/plugins/_desktop/profiles/agent-zero-desktop",
+    "manifest_mtime": 1792685964.3394845,
+    "pid_status": {
+      "xvfb": true,
+      "xfce": true,
+      "xpra": true
+    },
+    "pid_commands": {
+      "xvfb": "Xvfb",
+      "xfce": "xfce4-session",
+      "xpra": "xpra"
+    },
+    "port_accepting": true,
+    "display_valid": true
+  },
+  "state_after": {
+    "ok": true,
+    "context_id": "default",
+    "display": ":120",
+    "profile_dir": "/a0/usr/plugins/_desktop/profiles/agent-zero-desktop",
+    "size": {
+      "width": 1440,
+      "height": 900
+    },
+    "pointer": {
+      "x": 960,
+      "y": 540,
+      "screen": 0,
+      "window": 12582956
+    },
+    "active_window": null,
+    "windows": [
+      {
+        "id": "8388658",
+        "title": "Xfwm4",
+        "class": "Xfwm4",
+        "name": "xfwm4",
+        "pid": 1657,
+        "geometry": {
+          "x": -1000,
+          "y": -1000,
+          "width": 5,
+          "height": 5
+        }
+      },
+      {
+        "id": "12582956",
+        "title": "Desktop",
+        "class": "Xfdesktop",
+        "name": "xfdesktop",
+        "pid": 1756,
+        "geometry": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "id": "14680067",
+        "title": "xfce4-panel",
+        "class": "Xfce4-panel",
+        "name": "xfce4-panel",
+        "pid": 1742,
+        "geometry": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 25
+        }
+      },
+      {
+        "id": "18874371",
+        "title": "wrapper-2.0",
+        "class": "Wrapper-2.0",
+        "name": "wrapper-2.0",
+        "pid": 1778,
+        "geometry": {
+          "x": 1341,
+          "y": 0,
+          "width": 1,
+          "height": 24
+        }
+      }
+    ],
+    "screenshot": {
+      "ok": false,
+      "path": "",
+      "format": "",
+      "captured_at": "",
+      "recent": false
+    },
+    "capabilities": {
+      "xdotool": "/usr/bin/xdotool",
+      "xrandr": "/usr/bin/xrandr",
+      "xwininfo": "/usr/bin/xwininfo",
+      "xprop": "/usr/bin/xprop",
+      "xwd": "/usr/bin/xwd",
+      "xclip": "/usr/bin/xclip"
+    },
+    "errors": []
+  },
+  "route": [
+    {
+      "path": "/desktop/session/agent-zero-desktop/",
+      "status": 307,
+      "html": false
+    },
+    {
+      "path": "/desktop/session/agent-zero-desktop/index.html",
+      "status": 200,
+      "html": true
+    }
+  ],
+  "contexts_after": [
+    {
+      "id": "OzIMaV93",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-22T15:55:20.827623+00:00"
+    },
+    {
+      "id": "30dgUMoC",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T17:18:58.238222+00:00"
+    },
+    {
+      "id": "cC08syVL",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T17:15:57.003735+00:00"
+    },
+    {
+      "id": "1wJgHpim",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T17:13:36.229254+00:00"
+    },
+    {
+      "id": "QjEFT9FW",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T17:03:09.529303+00:00"
+    },
+    {
+      "id": "PYc4jWNp",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T15:38:36.333289+00:00"
+    }
+  ],
+  "containers_after": [
+    {
+      "name": "/agent-zero-1",
+      "id": "26e79c6970c001fa57953945d08339b639c08579b04b4a7aa42c46f2f254eece",
+      "started": "2026-10-21T21:49:26.394894494Z"
+    },
+    {
+      "name": "/agent-zero-2",
+      "id": "973e9149c0b2d1fab8b956ff27c02262d31652dc86e7e2c5b23790987dd0a07b",
+      "started": "2026-10-21T21:49:26.632852961Z"
+    }
+  ],
+  "contexts_unchanged": true,
+  "containers_unchanged": true,
+  "audit": [
+    {
+      "method": "POST",
+      "path": "/login",
+      "status": 302,
+      "seconds": 0.008
+    },
+    {
+      "method": "GET",
+      "path": "/api/csrf_token",
+      "status": 200,
+      "seconds": 0.003
+    },
+    {
+      "method": "POST",
+      "path": "/api/poll",
+      "status": 200,
+      "seconds": 0.006
+    },
+    {
+      "method": "POST",
+      "path": "/api/plugins/_desktop/desktop_session",
+      "status": 200,
+      "seconds": 4.656
+    },
+    {
+      "method": "POST",
+      "path": "/api/plugins/_desktop/desktop_session",
+      "status": 200,
+      "seconds": 0.021
+    },
+    {
+      "method": "GET",
+      "path": "/desktop/session/agent-zero-desktop/",
+      "status": 307,
+      "seconds": 0.001
+    },
+    {
+      "method": "GET",
+      "path": "/desktop/session/agent-zero-desktop/index.html?path=%2Fdesktop%2Fsession%2Fagent-zero-desktop%2F",
+      "status": 200,
+      "seconds": 0.012
+    },
+    {
+      "method": "POST",
+      "path": "/api/poll",
+      "status": 200,
+      "seconds": 0.005
+    }
+  ]
+}

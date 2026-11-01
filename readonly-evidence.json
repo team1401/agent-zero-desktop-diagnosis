@@ -1,0 +1,182 @@
+{
+  "time_utc": "2026-10-22T16:16:11Z",
+  "contexts": [
+    {
+      "id": "OzIMaV93",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-22T15:55:20.827623+00:00"
+    },
+    {
+      "id": "30dgUMoC",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T17:18:58.238222+00:00"
+    },
+    {
+      "id": "cC08syVL",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T17:15:57.003735+00:00"
+    },
+    {
+      "id": "1wJgHpim",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T17:13:36.229254+00:00"
+    },
+    {
+      "id": "QjEFT9FW",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T17:03:09.529303+00:00"
+    },
+    {
+      "id": "PYc4jWNp",
+      "running": false,
+      "paused": false,
+      "created_at": "2026-10-21T15:38:36.333289+00:00"
+    }
+  ],
+  "state": {
+    "ok": false,
+    "context_id": "OzIMaV93",
+    "display": ":120",
+    "profile_dir": "/a0/usr/plugins/_desktop/profiles/agent-zero-desktop",
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "pointer": {
+      "x": 0,
+      "y": 0,
+      "screen": 0,
+      "window": 0
+    },
+    "active_window": null,
+    "windows": [],
+    "screenshot": {
+      "ok": false,
+      "path": "",
+      "format": "",
+      "captured_at": "",
+      "recent": false
+    },
+    "capabilities": {
+      "xdotool": "/usr/bin/xdotool",
+      "xrandr": "/usr/bin/xrandr",
+      "xwininfo": "/usr/bin/xwininfo",
+      "xprop": "/usr/bin/xprop",
+      "xwd": "/usr/bin/xwd",
+      "xclip": "/usr/bin/xclip"
+    },
+    "errors": [
+      "Can't open display :120",
+      "Error: Can't open display: (null)\nFailed creating new xdo instance",
+      "Error: Can't open display: (null)\nFailed creating new xdo instance"
+    ]
+  },
+  "links": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/desktop/session/agent-zero-desktop/",
+      "status": 307,
+      "redirects": [
+        {
+          "path": "/desktop/session/agent-zero-desktop/index.html",
+          "query_present": true
+        }
+      ],
+      "query_names": [
+        "path"
+      ],
+      "html_frame": false,
+      "final_status": 404
+    }
+  ],
+  "runtime": {
+    "display": 120,
+    "xpra_port": 14500,
+    "pids": {
+      "xvfb": 584,
+      "xfce": 606,
+      "xpra": 1166
+    },
+    "width": 1440,
+    "height": 900,
+    "started_at": 1792598197.0038347,
+    "timezone": "UTC",
+    "manifest_exists": true,
+    "pid_status": {
+      "xvfb": false,
+      "xfce": false,
+      "xpra": false
+    },
+    "xpra_port_accepting": false,
+    "x_sockets": [
+      "X120",
+      "X0"
+    ]
+  },
+  "containers": [
+    {
+      "name": "/agent-zero-1",
+      "id": "26e79c6970c001fa57953945d08339b639c08579b04b4a7aa42c46f2f254eece",
+      "started": "2026-10-21T21:49:26.394894494Z",
+      "status": "running"
+    },
+    {
+      "name": "/agent-zero-2",
+      "id": "973e9149c0b2d1fab8b956ff27c02262d31652dc86e7e2c5b23790987dd0a07b",
+      "started": "2026-10-21T21:49:26.632852961Z",
+      "status": "running"
+    }
+  ],
+  "audit": [
+    {
+      "method": "POST",
+      "path": "/login",
+      "status": 302,
+      "seconds": 0.005
+    },
+    {
+      "method": "GET",
+      "path": "/api/csrf_token",
+      "status": 200,
+      "seconds": 0.003
+    },
+    {
+      "method": "POST",
+      "path": "/api/poll",
+      "status": 200,
+      "seconds": 0.005
+    },
+    {
+      "method": "POST",
+      "path": "/api/plugins/_desktop/desktop_session",
+      "status": 200,
+      "seconds": 0.008
+    },
+    {
+      "method": "GET",
+      "path": "/",
+      "status": 200,
+      "seconds": 0.002
+    },
+    {
+      "method": "GET",
+      "path": "/desktop/session/agent-zero-desktop/",
+      "status": 307,
+      "seconds": 0.001
+    },
+    {
+      "method": "GET",
+      "path": "/desktop/session/agent-zero-desktop/index.html",
+      "status": 404,
+      "seconds": 0.001
+    }
+  ]
+}
