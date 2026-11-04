@@ -5,7 +5,7 @@ sys.path.insert(0,str(Path(__file__).parent.parent/'creator-studio-integration')
 from verify_live import ssh,vault_login,meta
 from a0_client import A0Client
 root=Path(__file__).parent
-c=A0Client('http://100.108.186.69:50080',budget=12,timeout=25)
+c=A0Client('http://<agent-zero-host>:50080',budget=12,timeout=25)
 c.login(**vault_login())
 out={'time_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'contexts':meta(c.poll()),'state':c.post('plugins/_desktop/desktop_session',{'action':'state','include_screenshot':False,'context_id':'OzIMaV93'}),'links':[]}
 from urllib.parse import urlsplit,urljoin
@@ -16,7 +16,7 @@ for path in ['/','/desktop/session/agent-zero-desktop/']:
   if r.status_code not in [301,302,303,307,308]:break
   target=urlsplit(urljoin(c.base+path,r.headers.get('Location','')))
   entry.setdefault('redirects',[]).append({'path':target.path,'query_present':bool(target.query)})
-  if target.netloc!='100.108.186.69:50080':break
+  if target.netloc!='<agent-zero-host>:50080':break
   # Inspect query names only; never print URL values or use an unknown auth parameter.
   from urllib.parse import parse_qsl
   pairs=parse_qsl(target.query)

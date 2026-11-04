@@ -5,7 +5,7 @@ ROOT=Path(__file__).parent
 sys.path.insert(0,str(ROOT.parent/'creator-studio-integration'))
 from verify_live import ssh,vault_login,meta
 from a0_client import A0Client
-c=A0Client('http://100.108.186.69:50080',budget=12,timeout=25)
+c=A0Client('http://<agent-zero-host>:50080',budget=12,timeout=25)
 c.login(**vault_login())
 contexts=meta(c.poll())
 assert contexts and all(x['running'] is False for x in contexts),'BLOCK: context busy'
@@ -63,7 +63,7 @@ finally:
 remote='DIRECTORY='+repr(directory)+'\nTITLE='+repr(title)+'\nSENTINEL='+repr(sentinel)+'\n'+remote
 out={'contexts_before':contexts}
 try:
- r=subprocess.run(['ssh','-o','BatchMode=yes','-o','ConnectTimeout=10','root@100.108.186.69','docker exec agent-zero-1 /usr/bin/python3 -c '+shlex.quote(remote)],capture_output=True,text=True,timeout=35)
+ r=subprocess.run(['ssh','-o','BatchMode=yes','-o','ConnectTimeout=10','root@<agent-zero-host>','docker exec agent-zero-1 /usr/bin/python3 -c '+shlex.quote(remote)],capture_output=True,text=True,timeout=35)
  if r.returncode:raise RuntimeError('Dedicated probe failed: '+r.stderr[-2000:])
  out['native_probe']=json.loads(r.stdout)
  out['contexts_after']=meta(c.poll())

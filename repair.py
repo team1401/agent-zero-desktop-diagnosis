@@ -26,7 +26,7 @@ def save():
  (ROOT/'repair-evidence.json').write_text(json.dumps(out,indent=2)+'\n')
 
 out={'time_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())}
-c=A0Client('http://100.108.186.69:50080',budget=25,timeout=85)
+c=A0Client('http://<agent-zero-host>:50080',budget=25,timeout=85)
 try:
  c.login(**vault_login())
  out['containers_before']=containers();out['runtime_before']=runtime()
@@ -46,7 +46,7 @@ try:
   links.append({'path':urlsplit(path).path,'status':response.status_code,'html':'text/html' in response.headers.get('Content-Type','')})
   if response.status_code not in (301,302,303,307,308):break
   target=urlsplit(urljoin(c.base+path,response.headers['Location']))
-  if target.netloc!='100.108.186.69:50080':raise RuntimeError('Unexpected redirect origin')
+  if target.netloc!='<agent-zero-host>:50080':raise RuntimeError('Unexpected redirect origin')
   path=target.path+('?' + target.query if target.query else '')
  out['route']=links
  out['contexts_after']=meta(c.poll());out['containers_after']=containers()
